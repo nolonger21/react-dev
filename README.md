@@ -9,4 +9,4 @@ react+webpack 开发环境
 
 dist文件夹由构建生成，如果为空。
 先在当前目录运行
-npm run dll 生成vender.js 运行库
+npm run dll 生成vender.js 运行库。
