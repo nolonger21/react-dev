@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
 import styles from '../css/main.styl';
 import logo from '../images/logo.png';
 

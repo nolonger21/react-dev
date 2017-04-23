@@ -59,7 +59,7 @@ module.exports = {
         }),
         new extractTextPlugin('style.css'),
         new webpack.DllReferencePlugin({
-            context: __dirname,
+            context: rootPath,
             manifest: require('./manifest.json'),
         })
     ]
