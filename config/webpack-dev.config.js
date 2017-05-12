@@ -3,10 +3,11 @@ var htmlWebpackPlugin = require('html-webpack-plugin');
 var extractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path'),
     rootPath = path.resolve(__dirname, '..');
+    appPath = '/app-react-router/';
 
 module.exports = {
     entry:  {
-        bundle:rootPath + '/app/main.js'
+        bundle:rootPath + appPath + 'main.js'
     },
     output: {
         path: rootPath + '/dist',
@@ -44,7 +45,7 @@ module.exports = {
         }),
         new webpack.BannerPlugin('Copyright lee inc.'),
         new htmlWebpackPlugin({
-            template: 'html-withimg-loader!' + rootPath + '/app/index.html',
+            template: 'html-withimg-loader!' + rootPath + appPath + 'index.html',
             filename: rootPath + '/dist/index.html',
             inject:'body',
             hash:true,
