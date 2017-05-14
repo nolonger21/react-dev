@@ -57,7 +57,7 @@ module.exports = {
         }),
         new webpack.DllReferencePlugin({
             context: rootPath,
-            manifest: require('./manifest.json'),
+            manifest: __dirname + '/manifest.json'
         }),
         new webpack.HotModuleReplacementPlugin()
     ],

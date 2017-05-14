@@ -6,7 +6,9 @@ module.exports = {
     entry: {
         vendors: [
             'react',
-            'react-dom'
+            'react-dom',
+            'react-router',
+            'react-router-dom'
         ]
     },
     output: {
@@ -16,9 +18,9 @@ module.exports = {
     },
     plugins: [
         new webpack.DllPlugin({
-            path: 'manifest.json',
+            path: __dirname + '/manifest.json',
             name: '[name]',
-            context: __dirname,
+            context: rootPath
         })
     ]
 }
