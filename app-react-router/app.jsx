@@ -1,71 +1,39 @@
 import React from 'react'
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
-  Link
+  Link,
+  NavLink
 } from 'react-router-dom'
+
+const Links = () => (
+  <nav>
+    <NavLink to="/" exact  activeStyle={{ color: 'green'}}>Home</NavLink> 
+    <NavLink to="/about"   activeStyle={{ color: 'green'}}>About</NavLink> 
+    <NavLink to="/contact"   activeStyle={{ color: 'green'}}>Contact</NavLink> 
+    <NavLink to="/nested"   activeStyle={{ color: 'green'}}>Nested</NavLink> 
+  </nav>
+)
 
 const App = () => (
   <Router>
     <div>
-      <ul>
-        <li><Link to="/">首页</Link></li>
-        <li><Link to="/about">关于</Link></li>
-        <li><Link to="/topics">主题列表</Link></li>
-      </ul>
-
-      <hr/>
-
-      <Route exact path="/" component={Home}/>
-      <Route path="/about" component={About}/>
-      <Route path="/topics" component={Topics}/>
+      <Links />
+      <Route exact path="/" render={() => <h1>Home</h1>} />
+      <Route path="/about" render={() => <h1>About</h1>} />
+      <Route path="/contact" render={() => <h1>Contact</h1>} />
+      <Route path="/nested" render={Nested} />
     </div>
   </Router>
 )
 
-const Home = () => (
+const Nested = () => (
   <div>
-    <h2>首页</h2>
-  </div>
-)
-
-const About = () => (
-  <div>
-    <h2>关于</h2>
-  </div>
-)
-
-const Topics = ({ match }) => (
-  <div>
-    <h2>主题列表</h2>
-    <ul>
-      <li>
-        <Link to={`${match.url}/rendering`}>
-          使用 React 渲染
-        </Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/components`}>
-          组件
-        </Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/props-v-state`}>
-          属性 v. 状态
-        </Link>
-      </li>
-    </ul>
-
-    <Route path={`${match.url}/:topicId`} component={Topic}/>
-    <Route exact path={match.url} render={() => (
-      <h3>请选择一个主题。</h3>
-    )}/>
-  </div>
-)
-
-const Topic = ({ match }) => (
-  <div>
-    <h3>{match.params.topicId}</h3>
+    <Link to="/nested/one">One</Link>
+    <Link to="/nested/two">Two</Link>
+    <Link replace to="/nested/Three">Three</Link>
+    <div>选择一个点击</div>
+    <Route path="/nested/:minooo?" render={({match}) => <h2>URL: {match.params.minooo || 'minooo'}</h2>} />
   </div>
 )
 

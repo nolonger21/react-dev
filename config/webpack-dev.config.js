@@ -47,10 +47,10 @@ module.exports = {
         new htmlWebpackPlugin({
             template: 'html-withimg-loader!' + rootPath + appPath + 'index.html',
             filename: rootPath + '/dist/index.html',
-            inject:'body',
-            hash:true,
+            inject:false,
+            hash:false,
             minify: {
-                "removeAttributeQuotes": true,
+                "removeAtstributeQuotes": true,
                 "removeComments": true,
                 "removeEmptyAttributes": true
             }
