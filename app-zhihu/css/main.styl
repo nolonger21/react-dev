@@ -1,9 +1,10 @@
 
-body 
+body
   color #555
   margin 0
-  font-family 'Helvetica Neue' Helvetica, Arial, sans-serif
-
+  font-family 'Arial'
+a
+  text-decoration none
 
 h1, h2, h3, h4, h5, h6, p, ul
   margin 0
@@ -16,6 +17,7 @@ h1, h2, h3, h4, h5, h6, p, ul
   text-align center
 
 .header
+  margin-top 100px
   font-size 18px
   h2
     font-weight 400
@@ -30,6 +32,7 @@ h1, h2, h3, h4, h5, h6, p, ul
       font-size 20px
       line-height 150%
       a
+        color:#666
         margin 0 15px
         &.active
           color #0f88eb
@@ -41,10 +44,16 @@ h1, h2, h3, h4, h5, h6, p, ul
         width 2em
         height 2px
         background-color #0f88eb
+        transition: left .15s ease-in
+      &[data-active-index='1']
+        span
+          left: 3.5em
   .form
-    border solid 1px #ccc
-    border-bottom none
     overflow hidden
+    .reg,.login
+      border solid 1px #ccc
+      border-bottom none
+      overflow hidden
     input
       color #888
       width 100%
@@ -52,10 +61,6 @@ h1, h2, h3, h4, h5, h6, p, ul
       border none
       border-bottom solid 1px #ccc
       background-color #fff
-    .reg,.login
-      display none
-    .active 
-      display block
   .btn
     margin-top 1.2em
     button

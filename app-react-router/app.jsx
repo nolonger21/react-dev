@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Route,
   Link,
   NavLink
@@ -8,10 +8,11 @@ import {
 
 const Links = () => (
   <nav>
-    <NavLink to="/" exact  activeStyle={{ color: 'green'}}>Home</NavLink> 
-    <NavLink to="/about"   activeStyle={{ color: 'green'}}>About</NavLink> 
-    <NavLink to="/contact"   activeStyle={{ color: 'green'}}>Contact</NavLink> 
-    <NavLink to="/nested"   activeStyle={{ color: 'green'}}>Nested</NavLink> 
+    <ul>
+      <li><NavLink to="/" exact  activeStyle={{ color: 'green'}}>Home</NavLink></li>
+      <li><NavLink to="/public"  activeStyle={{ color: 'green'}}>public</NavLink></li>
+      <li><NavLink to="/login"   activeStyle={{ color: 'green'}}>login</NavLink></li>
+    </ul>
   </nav>
 )
 
@@ -20,21 +21,16 @@ const App = () => (
     <div>
       <Links />
       <Route exact path="/" render={() => <h1>Home</h1>} />
-      <Route path="/about" render={() => <h1>About</h1>} />
-      <Route path="/contact" render={() => <h1>Contact</h1>} />
-      <Route path="/nested" render={Nested} />
+      <Route path="/public" render={() => <h1>公开的页面</h1>} />
+      <Route path="/login" render={() => (
+        <div>
+          <h1>若想要访问非公开页面，请先</h1>
+          <button onClick={this.login}>登录</button>
+        </div>
+        )}
+        />
+      <Route path="/protected" render={() => <h1>非公开的页面</h1>} />
     </div>
   </Router>
 )
-
-const Nested = () => (
-  <div>
-    <Link to="/nested/one">One</Link>
-    <Link to="/nested/two">Two</Link>
-    <Link replace to="/nested/Three">Three</Link>
-    <div>选择一个点击</div>
-    <Route path="/nested/:minooo?" render={({match}) => <h2>URL: {match.params.minooo || 'minooo'}</h2>} />
-  </div>
-)
-
 export default App;

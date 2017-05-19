@@ -3,7 +3,7 @@ var htmlWebpackPlugin = require('html-webpack-plugin');
 var extractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path'),
     rootPath = path.resolve(__dirname, '..');
-    appPath = '/app-react-router/';
+    appPath = '/app-zhihu/';
 
 module.exports = {
     entry:  {
