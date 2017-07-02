@@ -3,11 +3,11 @@ var htmlWebpackPlugin = require('html-webpack-plugin');
 var extractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path'),
     rootPath = path.resolve(__dirname, '..');
-    appPath = '/app-zhihu/';
+    appPath = '/app-redux/';
 
 module.exports = {
     entry:  {
-        bundle:rootPath + appPath +'main.js'
+        bundle:rootPath + appPath +'index.js'
     },
     output: {
         path: rootPath + '/dist',
@@ -50,7 +50,7 @@ module.exports = {
         new htmlWebpackPlugin({
             template: 'html-withimg-loader!' + rootPath + appPath + 'index.html',
             filename: rootPath + '/dist/index.html',
-            inject:false,
+            inject:true,
             hash:false,
             minify: {
                 "removeAttributeQuotes": true,

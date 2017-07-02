@@ -21,12 +21,16 @@
       "id": 4,
       "meta": {}
     },
-    "./node_modules/fbjs/lib/ExecutionEnvironment.js": {
+    "./node_modules/react/react.js": {
       "id": 5,
       "meta": {}
     },
-    "./node_modules/react-router/es/index.js": {
+    "./node_modules/fbjs/lib/ExecutionEnvironment.js": {
       "id": 6,
+      "meta": {}
+    },
+    "./node_modules/react-router/es/index.js": {
+      "id": 7,
       "meta": {
         "harmonyModule": true
       },
@@ -41,10 +45,6 @@
         "matchPath",
         "withRouter"
       ]
-    },
-    "./node_modules/react/react.js": {
-      "id": 7,
-      "meta": {}
     },
     "./node_modules/fbjs/lib/emptyFunction.js": {
       "id": 8,
@@ -110,23 +110,23 @@
       "id": 23,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/EventPluginHub.js": {
+    "./node_modules/invariant/browser.js": {
       "id": 24,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/EventPropagators.js": {
+    "./node_modules/react-dom/lib/EventPluginHub.js": {
       "id": 25,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactInstanceMap.js": {
+    "./node_modules/react-dom/lib/EventPropagators.js": {
       "id": 26,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/SyntheticUIEvent.js": {
+    "./node_modules/react-dom/lib/ReactInstanceMap.js": {
       "id": 27,
       "meta": {}
     },
-    "./node_modules/invariant/browser.js": {
+    "./node_modules/react-dom/lib/SyntheticUIEvent.js": {
       "id": 28,
       "meta": {}
     },
@@ -162,72 +162,8 @@
       "id": 36,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/DOMChildrenOperations.js": {
+    "./node_modules/lodash-es/isPlainObject.js": {
       "id": 37,
-      "meta": {}
-    },
-    "./node_modules/react-dom/lib/DOMNamespaces.js": {
-      "id": 38,
-      "meta": {}
-    },
-    "./node_modules/react-dom/lib/EventPluginRegistry.js": {
-      "id": 39,
-      "meta": {}
-    },
-    "./node_modules/react-dom/lib/EventPluginUtils.js": {
-      "id": 40,
-      "meta": {}
-    },
-    "./node_modules/react-dom/lib/KeyEscapeUtils.js": {
-      "id": 41,
-      "meta": {}
-    },
-    "./node_modules/react-dom/lib/LinkedValueUtils.js": {
-      "id": 42,
-      "meta": {}
-    },
-    "./node_modules/react-dom/lib/ReactComponentEnvironment.js": {
-      "id": 43,
-      "meta": {}
-    },
-    "./node_modules/react-dom/lib/ReactErrorUtils.js": {
-      "id": 44,
-      "meta": {}
-    },
-    "./node_modules/react-dom/lib/ReactUpdateQueue.js": {
-      "id": 45,
-      "meta": {}
-    },
-    "./node_modules/react-dom/lib/createMicrosoftUnsafeLocalFunction.js": {
-      "id": 46,
-      "meta": {}
-    },
-    "./node_modules/react-dom/lib/getEventCharCode.js": {
-      "id": 47,
-      "meta": {}
-    },
-    "./node_modules/react-dom/lib/getEventModifierState.js": {
-      "id": 48,
-      "meta": {}
-    },
-    "./node_modules/react-dom/lib/getEventTarget.js": {
-      "id": 49,
-      "meta": {}
-    },
-    "./node_modules/react-dom/lib/isEventSupported.js": {
-      "id": 50,
-      "meta": {}
-    },
-    "./node_modules/react-dom/lib/shouldUpdateReactComponent.js": {
-      "id": 51,
-      "meta": {}
-    },
-    "./node_modules/react-dom/lib/validateDOMNesting.js": {
-      "id": 52,
-      "meta": {}
-    },
-    "./node_modules/react-router/es/Router.js": {
-      "id": 53,
       "meta": {
         "harmonyModule": true
       },
@@ -235,7 +171,71 @@
         "default"
       ]
     },
-    "./node_modules/react-router/es/matchPath.js": {
+    "./node_modules/react-dom/lib/DOMChildrenOperations.js": {
+      "id": 38,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/DOMNamespaces.js": {
+      "id": 39,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/EventPluginRegistry.js": {
+      "id": 40,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/EventPluginUtils.js": {
+      "id": 41,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/KeyEscapeUtils.js": {
+      "id": 42,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/LinkedValueUtils.js": {
+      "id": 43,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/ReactComponentEnvironment.js": {
+      "id": 44,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/ReactErrorUtils.js": {
+      "id": 45,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/ReactUpdateQueue.js": {
+      "id": 46,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/createMicrosoftUnsafeLocalFunction.js": {
+      "id": 47,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/getEventCharCode.js": {
+      "id": 48,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/getEventModifierState.js": {
+      "id": 49,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/getEventTarget.js": {
+      "id": 50,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/isEventSupported.js": {
+      "id": 51,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/shouldUpdateReactComponent.js": {
+      "id": 52,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/validateDOMNesting.js": {
+      "id": 53,
+      "meta": {}
+    },
+    "./node_modules/react-redux/es/utils/warning.js": {
       "id": 54,
       "meta": {
         "harmonyModule": true
@@ -244,120 +244,207 @@
         "default"
       ]
     },
-    "./node_modules/react/lib/ReactComponent.js": {
+    "./node_modules/react-router/es/Router.js": {
       "id": 55,
-      "meta": {}
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
     },
-    "./node_modules/react/lib/ReactNoopUpdateQueue.js": {
+    "./node_modules/react-router/es/matchPath.js": {
       "id": 56,
-      "meta": {}
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
     },
-    "./node_modules/fbjs/lib/EventListener.js": {
+    "./node_modules/react/lib/ReactComponent.js": {
       "id": 57,
       "meta": {}
     },
-    "./node_modules/fbjs/lib/focusNode.js": {
+    "./node_modules/react/lib/ReactNoopUpdateQueue.js": {
       "id": 58,
       "meta": {}
     },
-    "./node_modules/fbjs/lib/getActiveElement.js": {
+    "./node_modules/redux/es/index.js": {
       "id": 59,
-      "meta": {}
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "createStore",
+        "combineReducers",
+        "bindActionCreators",
+        "applyMiddleware",
+        "compose"
+      ]
     },
-    "./node_modules/history/DOMUtils.js": {
+    "./node_modules/fbjs/lib/EventListener.js": {
       "id": 60,
       "meta": {}
     },
-    "./node_modules/node-libs-browser/node_modules/process/browser.js": {
+    "./node_modules/fbjs/lib/focusNode.js": {
       "id": 61,
       "meta": {}
     },
-    "./node_modules/prop-types/factory.js": {
+    "./node_modules/fbjs/lib/getActiveElement.js": {
       "id": 62,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/CSSProperty.js": {
+    "./node_modules/history/DOMUtils.js": {
       "id": 63,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/CallbackQueue.js": {
+    "./node_modules/hoist-non-react-statics/index.js": {
       "id": 64,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/DOMPropertyOperations.js": {
+    "./node_modules/lodash-es/_Symbol.js": {
       "id": 65,
-      "meta": {}
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
     },
-    "./node_modules/react-dom/lib/ReactDOMComponentFlags.js": {
+    "./node_modules/node-libs-browser/node_modules/process/browser.js": {
       "id": 66,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactDOMSelect.js": {
+    "./node_modules/prop-types/factory.js": {
       "id": 67,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactEmptyComponent.js": {
+    "./node_modules/react-dom/lib/CSSProperty.js": {
       "id": 68,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactFeatureFlags.js": {
+    "./node_modules/react-dom/lib/CallbackQueue.js": {
       "id": 69,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactHostComponent.js": {
+    "./node_modules/react-dom/lib/DOMPropertyOperations.js": {
       "id": 70,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactInputSelection.js": {
+    "./node_modules/react-dom/lib/ReactDOMComponentFlags.js": {
       "id": 71,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactMount.js": {
+    "./node_modules/react-dom/lib/ReactDOMSelect.js": {
       "id": 72,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactNodeTypes.js": {
+    "./node_modules/react-dom/lib/ReactEmptyComponent.js": {
       "id": 73,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ViewportMetrics.js": {
+    "./node_modules/react-dom/lib/ReactFeatureFlags.js": {
       "id": 74,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/accumulateInto.js": {
+    "./node_modules/react-dom/lib/ReactHostComponent.js": {
       "id": 75,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/forEachAccumulated.js": {
+    "./node_modules/react-dom/lib/ReactInputSelection.js": {
       "id": 76,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/getHostComponentFromComposite.js": {
+    "./node_modules/react-dom/lib/ReactMount.js": {
       "id": 77,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/getTextContentAccessor.js": {
+    "./node_modules/react-dom/lib/ReactNodeTypes.js": {
       "id": 78,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/instantiateReactComponent.js": {
+    "./node_modules/react-dom/lib/ViewportMetrics.js": {
       "id": 79,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/isTextInputElement.js": {
+    "./node_modules/react-dom/lib/accumulateInto.js": {
       "id": 80,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/setTextContent.js": {
+    "./node_modules/react-dom/lib/forEachAccumulated.js": {
       "id": 81,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/traverseAllChildren.js": {
+    "./node_modules/react-dom/lib/getHostComponentFromComposite.js": {
       "id": 82,
       "meta": {}
     },
-    "./node_modules/react-router-dom/es/Link.js": {
+    "./node_modules/react-dom/lib/getTextContentAccessor.js": {
       "id": 83,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/instantiateReactComponent.js": {
+      "id": 84,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/isTextInputElement.js": {
+      "id": 85,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/setTextContent.js": {
+      "id": 86,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/traverseAllChildren.js": {
+      "id": 87,
+      "meta": {}
+    },
+    "./node_modules/react-redux/es/components/connectAdvanced.js": {
+      "id": 88,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./node_modules/react-redux/es/connect/wrapMapToProps.js": {
+      "id": 89,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "wrapMapToPropsConstant",
+        "getDependsOnOwnProps",
+        "wrapMapToPropsFunc"
+      ]
+    },
+    "./node_modules/react-redux/es/utils/PropTypes.js": {
+      "id": 90,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "subscriptionShape",
+        "storeShape"
+      ]
+    },
+    "./node_modules/react-redux/es/utils/verifyPlainObject.js": {
+      "id": 91,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./node_modules/react-redux/node_modules/prop-types/index.js": {
+      "id": 92,
+      "meta": {}
+    },
+    "./node_modules/react-router-dom/es/Link.js": {
+      "id": 93,
       "meta": {
         "harmonyModule": true
       },
@@ -366,7 +453,7 @@
       ]
     },
     "./node_modules/react-router/es/Route.js": {
-      "id": 84,
+      "id": 94,
       "meta": {
         "harmonyModule": true
       },
@@ -375,23 +462,67 @@
       ]
     },
     "./node_modules/react/lib/ReactComponentTreeHook.js": {
-      "id": 85,
+      "id": 95,
       "meta": {}
     },
     "./node_modules/react/lib/ReactElementSymbol.js": {
-      "id": 86,
+      "id": 96,
       "meta": {}
     },
     "./node_modules/react/lib/canDefineProperty.js": {
-      "id": 87,
+      "id": 97,
+      "meta": {}
+    },
+    "./node_modules/redux/es/compose.js": {
+      "id": 98,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./node_modules/redux/es/createStore.js": {
+      "id": 99,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "ActionTypes",
+        "default"
+      ]
+    },
+    "./node_modules/redux/es/utils/warning.js": {
+      "id": 100,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./node_modules/webpack/buildin/global.js": {
+      "id": 101,
       "meta": {}
     },
     "./node_modules/react-dom/index.js": {
-      "id": 88,
+      "id": 102,
       "meta": {}
     },
+    "./node_modules/react-redux/es/index.js": {
+      "id": 103,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "Provider",
+        "createProvider",
+        "connectAdvanced",
+        "connect"
+      ]
+    },
     "./node_modules/react-router-dom/es/index.js": {
-      "id": 89,
+      "id": 104,
       "meta": {
         "harmonyModule": true
       },
@@ -412,347 +543,517 @@
       ]
     },
     "./node_modules/fbjs/lib/camelize.js": {
-      "id": 90,
-      "meta": {}
-    },
-    "./node_modules/fbjs/lib/camelizeStyleName.js": {
-      "id": 91,
-      "meta": {}
-    },
-    "./node_modules/fbjs/lib/containsNode.js": {
-      "id": 92,
-      "meta": {}
-    },
-    "./node_modules/fbjs/lib/createArrayFromMixed.js": {
-      "id": 93,
-      "meta": {}
-    },
-    "./node_modules/fbjs/lib/createNodesFromMarkup.js": {
-      "id": 94,
-      "meta": {}
-    },
-    "./node_modules/fbjs/lib/getMarkupWrap.js": {
-      "id": 95,
-      "meta": {}
-    },
-    "./node_modules/fbjs/lib/getUnboundedScrollPosition.js": {
-      "id": 96,
-      "meta": {}
-    },
-    "./node_modules/fbjs/lib/hyphenate.js": {
-      "id": 97,
-      "meta": {}
-    },
-    "./node_modules/fbjs/lib/hyphenateStyleName.js": {
-      "id": 98,
-      "meta": {}
-    },
-    "./node_modules/fbjs/lib/isNode.js": {
-      "id": 99,
-      "meta": {}
-    },
-    "./node_modules/fbjs/lib/isTextNode.js": {
-      "id": 100,
-      "meta": {}
-    },
-    "./node_modules/fbjs/lib/memoizeStringOnly.js": {
-      "id": 101,
-      "meta": {}
-    },
-    "./node_modules/history/createBrowserHistory.js": {
-      "id": 102,
-      "meta": {}
-    },
-    "./node_modules/history/createHashHistory.js": {
-      "id": 103,
-      "meta": {}
-    },
-    "./node_modules/history/createMemoryHistory.js": {
-      "id": 104,
-      "meta": {}
-    },
-    "./node_modules/hoist-non-react-statics/index.js": {
       "id": 105,
       "meta": {}
     },
-    "./node_modules/isarray/index.js": {
+    "./node_modules/fbjs/lib/camelizeStyleName.js": {
       "id": 106,
       "meta": {}
     },
-    "./node_modules/path-to-regexp/index.js": {
+    "./node_modules/fbjs/lib/containsNode.js": {
       "id": 107,
       "meta": {}
     },
-    "./node_modules/prop-types/checkPropTypes.js": {
+    "./node_modules/fbjs/lib/createArrayFromMixed.js": {
       "id": 108,
       "meta": {}
     },
-    "./node_modules/prop-types/factoryWithThrowingShims.js": {
+    "./node_modules/fbjs/lib/createNodesFromMarkup.js": {
       "id": 109,
       "meta": {}
     },
-    "./node_modules/prop-types/factoryWithTypeCheckers.js": {
+    "./node_modules/fbjs/lib/getMarkupWrap.js": {
       "id": 110,
       "meta": {}
     },
-    "./node_modules/prop-types/lib/ReactPropTypesSecret.js": {
+    "./node_modules/fbjs/lib/getUnboundedScrollPosition.js": {
       "id": 111,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ARIADOMPropertyConfig.js": {
+    "./node_modules/fbjs/lib/hyphenate.js": {
       "id": 112,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/AutoFocusUtils.js": {
+    "./node_modules/fbjs/lib/hyphenateStyleName.js": {
       "id": 113,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/BeforeInputEventPlugin.js": {
+    "./node_modules/fbjs/lib/isNode.js": {
       "id": 114,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/CSSPropertyOperations.js": {
+    "./node_modules/fbjs/lib/isTextNode.js": {
       "id": 115,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ChangeEventPlugin.js": {
+    "./node_modules/fbjs/lib/memoizeStringOnly.js": {
       "id": 116,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/Danger.js": {
+    "./node_modules/history/createBrowserHistory.js": {
       "id": 117,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/DefaultEventPluginOrder.js": {
+    "./node_modules/history/createHashHistory.js": {
       "id": 118,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/EnterLeaveEventPlugin.js": {
+    "./node_modules/history/createMemoryHistory.js": {
       "id": 119,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/FallbackCompositionState.js": {
+    "./node_modules/isarray/index.js": {
       "id": 120,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/HTMLDOMPropertyConfig.js": {
+    "./node_modules/lodash-es/_baseGetTag.js": {
       "id": 121,
-      "meta": {}
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
     },
-    "./node_modules/react-dom/lib/ReactChildReconciler.js": {
+    "./node_modules/lodash-es/_freeGlobal.js": {
       "id": 122,
-      "meta": {}
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
     },
-    "./node_modules/react-dom/lib/ReactComponentBrowserEnvironment.js": {
+    "./node_modules/lodash-es/_getPrototype.js": {
       "id": 123,
-      "meta": {}
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
     },
-    "./node_modules/react-dom/lib/ReactCompositeComponent.js": {
+    "./node_modules/lodash-es/_getRawTag.js": {
       "id": 124,
-      "meta": {}
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
     },
-    "./node_modules/react-dom/lib/ReactDOM.js": {
+    "./node_modules/lodash-es/_objectToString.js": {
       "id": 125,
-      "meta": {}
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
     },
-    "./node_modules/react-dom/lib/ReactDOMComponent.js": {
+    "./node_modules/lodash-es/_overArg.js": {
       "id": 126,
-      "meta": {}
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
     },
-    "./node_modules/react-dom/lib/ReactDOMContainerInfo.js": {
+    "./node_modules/lodash-es/_root.js": {
       "id": 127,
-      "meta": {}
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
     },
-    "./node_modules/react-dom/lib/ReactDOMEmptyComponent.js": {
+    "./node_modules/lodash-es/isObjectLike.js": {
       "id": 128,
-      "meta": {}
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
     },
-    "./node_modules/react-dom/lib/ReactDOMFeatureFlags.js": {
+    "./node_modules/path-to-regexp/index.js": {
       "id": 129,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactDOMIDOperations.js": {
+    "./node_modules/prop-types/checkPropTypes.js": {
       "id": 130,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactDOMInput.js": {
+    "./node_modules/prop-types/factoryWithThrowingShims.js": {
       "id": 131,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactDOMOption.js": {
+    "./node_modules/prop-types/factoryWithTypeCheckers.js": {
       "id": 132,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactDOMSelection.js": {
+    "./node_modules/prop-types/lib/ReactPropTypesSecret.js": {
       "id": 133,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactDOMTextComponent.js": {
+    "./node_modules/react-dom/lib/ARIADOMPropertyConfig.js": {
       "id": 134,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactDOMTextarea.js": {
+    "./node_modules/react-dom/lib/AutoFocusUtils.js": {
       "id": 135,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactDOMTreeTraversal.js": {
+    "./node_modules/react-dom/lib/BeforeInputEventPlugin.js": {
       "id": 136,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactDefaultBatchingStrategy.js": {
+    "./node_modules/react-dom/lib/CSSPropertyOperations.js": {
       "id": 137,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactDefaultInjection.js": {
+    "./node_modules/react-dom/lib/ChangeEventPlugin.js": {
       "id": 138,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactElementSymbol.js": {
+    "./node_modules/react-dom/lib/Danger.js": {
       "id": 139,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactEventEmitterMixin.js": {
+    "./node_modules/react-dom/lib/DefaultEventPluginOrder.js": {
       "id": 140,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactEventListener.js": {
+    "./node_modules/react-dom/lib/EnterLeaveEventPlugin.js": {
       "id": 141,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactInjection.js": {
+    "./node_modules/react-dom/lib/FallbackCompositionState.js": {
       "id": 142,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactMarkupChecksum.js": {
+    "./node_modules/react-dom/lib/HTMLDOMPropertyConfig.js": {
       "id": 143,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactMultiChild.js": {
+    "./node_modules/react-dom/lib/ReactChildReconciler.js": {
       "id": 144,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactOwner.js": {
+    "./node_modules/react-dom/lib/ReactComponentBrowserEnvironment.js": {
       "id": 145,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactPropTypesSecret.js": {
+    "./node_modules/react-dom/lib/ReactCompositeComponent.js": {
       "id": 146,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactReconcileTransaction.js": {
+    "./node_modules/react-dom/lib/ReactDOM.js": {
       "id": 147,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactRef.js": {
+    "./node_modules/react-dom/lib/ReactDOMComponent.js": {
       "id": 148,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactServerRenderingTransaction.js": {
+    "./node_modules/react-dom/lib/ReactDOMContainerInfo.js": {
       "id": 149,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactServerUpdateQueue.js": {
+    "./node_modules/react-dom/lib/ReactDOMEmptyComponent.js": {
       "id": 150,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/ReactVersion.js": {
+    "./node_modules/react-dom/lib/ReactDOMFeatureFlags.js": {
       "id": 151,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/SVGDOMPropertyConfig.js": {
+    "./node_modules/react-dom/lib/ReactDOMIDOperations.js": {
       "id": 152,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/SelectEventPlugin.js": {
+    "./node_modules/react-dom/lib/ReactDOMInput.js": {
       "id": 153,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/SimpleEventPlugin.js": {
+    "./node_modules/react-dom/lib/ReactDOMOption.js": {
       "id": 154,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/SyntheticAnimationEvent.js": {
+    "./node_modules/react-dom/lib/ReactDOMSelection.js": {
       "id": 155,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/SyntheticClipboardEvent.js": {
+    "./node_modules/react-dom/lib/ReactDOMTextComponent.js": {
       "id": 156,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/SyntheticCompositionEvent.js": {
+    "./node_modules/react-dom/lib/ReactDOMTextarea.js": {
       "id": 157,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/SyntheticDragEvent.js": {
+    "./node_modules/react-dom/lib/ReactDOMTreeTraversal.js": {
       "id": 158,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/SyntheticFocusEvent.js": {
+    "./node_modules/react-dom/lib/ReactDefaultBatchingStrategy.js": {
       "id": 159,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/SyntheticInputEvent.js": {
+    "./node_modules/react-dom/lib/ReactDefaultInjection.js": {
       "id": 160,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/SyntheticKeyboardEvent.js": {
+    "./node_modules/react-dom/lib/ReactElementSymbol.js": {
       "id": 161,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/SyntheticTouchEvent.js": {
+    "./node_modules/react-dom/lib/ReactEventEmitterMixin.js": {
       "id": 162,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/SyntheticTransitionEvent.js": {
+    "./node_modules/react-dom/lib/ReactEventListener.js": {
       "id": 163,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/SyntheticWheelEvent.js": {
+    "./node_modules/react-dom/lib/ReactInjection.js": {
       "id": 164,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/adler32.js": {
+    "./node_modules/react-dom/lib/ReactMarkupChecksum.js": {
       "id": 165,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/dangerousStyleValue.js": {
+    "./node_modules/react-dom/lib/ReactMultiChild.js": {
       "id": 166,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/findDOMNode.js": {
+    "./node_modules/react-dom/lib/ReactOwner.js": {
       "id": 167,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/flattenChildren.js": {
+    "./node_modules/react-dom/lib/ReactPropTypesSecret.js": {
       "id": 168,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/getEventKey.js": {
+    "./node_modules/react-dom/lib/ReactReconcileTransaction.js": {
       "id": 169,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/getIteratorFn.js": {
+    "./node_modules/react-dom/lib/ReactRef.js": {
       "id": 170,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/getNodeForCharacterOffset.js": {
+    "./node_modules/react-dom/lib/ReactServerRenderingTransaction.js": {
       "id": 171,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/getVendorPrefixedEventName.js": {
+    "./node_modules/react-dom/lib/ReactServerUpdateQueue.js": {
       "id": 172,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/quoteAttributeValueForBrowser.js": {
+    "./node_modules/react-dom/lib/ReactVersion.js": {
       "id": 173,
       "meta": {}
     },
-    "./node_modules/react-dom/lib/renderSubtreeIntoContainer.js": {
+    "./node_modules/react-dom/lib/SVGDOMPropertyConfig.js": {
       "id": 174,
       "meta": {}
     },
-    "./node_modules/react-router-dom/es/BrowserRouter.js": {
+    "./node_modules/react-dom/lib/SelectEventPlugin.js": {
       "id": 175,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/SimpleEventPlugin.js": {
+      "id": 176,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/SyntheticAnimationEvent.js": {
+      "id": 177,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/SyntheticClipboardEvent.js": {
+      "id": 178,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/SyntheticCompositionEvent.js": {
+      "id": 179,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/SyntheticDragEvent.js": {
+      "id": 180,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/SyntheticFocusEvent.js": {
+      "id": 181,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/SyntheticInputEvent.js": {
+      "id": 182,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/SyntheticKeyboardEvent.js": {
+      "id": 183,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/SyntheticTouchEvent.js": {
+      "id": 184,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/SyntheticTransitionEvent.js": {
+      "id": 185,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/SyntheticWheelEvent.js": {
+      "id": 186,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/adler32.js": {
+      "id": 187,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/dangerousStyleValue.js": {
+      "id": 188,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/findDOMNode.js": {
+      "id": 189,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/flattenChildren.js": {
+      "id": 190,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/getEventKey.js": {
+      "id": 191,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/getIteratorFn.js": {
+      "id": 192,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/getNodeForCharacterOffset.js": {
+      "id": 193,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/getVendorPrefixedEventName.js": {
+      "id": 194,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/quoteAttributeValueForBrowser.js": {
+      "id": 195,
+      "meta": {}
+    },
+    "./node_modules/react-dom/lib/renderSubtreeIntoContainer.js": {
+      "id": 196,
+      "meta": {}
+    },
+    "./node_modules/react-redux/es/components/Provider.js": {
+      "id": 197,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "createProvider",
+        "default"
+      ]
+    },
+    "./node_modules/react-redux/es/connect/connect.js": {
+      "id": 198,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "createConnect",
+        "default"
+      ]
+    },
+    "./node_modules/react-redux/es/connect/mapDispatchToProps.js": {
+      "id": 199,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "whenMapDispatchToPropsIsFunction",
+        "whenMapDispatchToPropsIsMissing",
+        "whenMapDispatchToPropsIsObject",
+        "default"
+      ]
+    },
+    "./node_modules/react-redux/es/connect/mapStateToProps.js": {
+      "id": 200,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "whenMapStateToPropsIsFunction",
+        "whenMapStateToPropsIsMissing",
+        "default"
+      ]
+    },
+    "./node_modules/react-redux/es/connect/mergeProps.js": {
+      "id": 201,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "defaultMergeProps",
+        "wrapMergePropsFunc",
+        "whenMergePropsIsFunction",
+        "whenMergePropsIsOmitted",
+        "default"
+      ]
+    },
+    "./node_modules/react-redux/es/connect/selectorFactory.js": {
+      "id": 202,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "impureFinalPropsSelectorFactory",
+        "pureFinalPropsSelectorFactory",
+        "default"
+      ]
+    },
+    "./node_modules/react-redux/es/connect/verifySubselectors.js": {
+      "id": 203,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./node_modules/react-redux/es/utils/Subscription.js": {
+      "id": 204,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./node_modules/react-redux/es/utils/shallowEqual.js": {
+      "id": 205,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./node_modules/react-redux/node_modules/prop-types/factoryWithThrowingShims.js": {
+      "id": 206,
+      "meta": {}
+    },
+    "./node_modules/react-redux/node_modules/prop-types/lib/ReactPropTypesSecret.js": {
+      "id": 207,
+      "meta": {}
+    },
+    "./node_modules/react-router-dom/es/BrowserRouter.js": {
+      "id": 208,
       "meta": {
         "harmonyModule": true
       },
@@ -761,7 +1062,7 @@
       ]
     },
     "./node_modules/react-router-dom/es/HashRouter.js": {
-      "id": 176,
+      "id": 209,
       "meta": {
         "harmonyModule": true
       },
@@ -770,7 +1071,7 @@
       ]
     },
     "./node_modules/react-router-dom/es/MemoryRouter.js": {
-      "id": 177,
+      "id": 210,
       "meta": {
         "harmonyModule": true
       },
@@ -779,7 +1080,7 @@
       ]
     },
     "./node_modules/react-router-dom/es/NavLink.js": {
-      "id": 178,
+      "id": 211,
       "meta": {
         "harmonyModule": true
       },
@@ -788,7 +1089,7 @@
       ]
     },
     "./node_modules/react-router-dom/es/Prompt.js": {
-      "id": 179,
+      "id": 212,
       "meta": {
         "harmonyModule": true
       },
@@ -797,7 +1098,7 @@
       ]
     },
     "./node_modules/react-router-dom/es/Redirect.js": {
-      "id": 180,
+      "id": 213,
       "meta": {
         "harmonyModule": true
       },
@@ -806,7 +1107,7 @@
       ]
     },
     "./node_modules/react-router-dom/es/Route.js": {
-      "id": 181,
+      "id": 214,
       "meta": {
         "harmonyModule": true
       },
@@ -815,7 +1116,7 @@
       ]
     },
     "./node_modules/react-router-dom/es/Router.js": {
-      "id": 182,
+      "id": 215,
       "meta": {
         "harmonyModule": true
       },
@@ -824,7 +1125,7 @@
       ]
     },
     "./node_modules/react-router-dom/es/StaticRouter.js": {
-      "id": 183,
+      "id": 216,
       "meta": {
         "harmonyModule": true
       },
@@ -833,7 +1134,7 @@
       ]
     },
     "./node_modules/react-router-dom/es/Switch.js": {
-      "id": 184,
+      "id": 217,
       "meta": {
         "harmonyModule": true
       },
@@ -842,7 +1143,7 @@
       ]
     },
     "./node_modules/react-router-dom/es/matchPath.js": {
-      "id": 185,
+      "id": 218,
       "meta": {
         "harmonyModule": true
       },
@@ -851,7 +1152,7 @@
       ]
     },
     "./node_modules/react-router-dom/es/withRouter.js": {
-      "id": 186,
+      "id": 219,
       "meta": {
         "harmonyModule": true
       },
@@ -860,7 +1161,7 @@
       ]
     },
     "./node_modules/react-router/es/MemoryRouter.js": {
-      "id": 187,
+      "id": 220,
       "meta": {
         "harmonyModule": true
       },
@@ -869,7 +1170,7 @@
       ]
     },
     "./node_modules/react-router/es/Prompt.js": {
-      "id": 188,
+      "id": 221,
       "meta": {
         "harmonyModule": true
       },
@@ -878,7 +1179,7 @@
       ]
     },
     "./node_modules/react-router/es/Redirect.js": {
-      "id": 189,
+      "id": 222,
       "meta": {
         "harmonyModule": true
       },
@@ -887,7 +1188,7 @@
       ]
     },
     "./node_modules/react-router/es/StaticRouter.js": {
-      "id": 190,
+      "id": 223,
       "meta": {
         "harmonyModule": true
       },
@@ -896,7 +1197,7 @@
       ]
     },
     "./node_modules/react-router/es/Switch.js": {
-      "id": 191,
+      "id": 224,
       "meta": {
         "harmonyModule": true
       },
@@ -905,7 +1206,7 @@
       ]
     },
     "./node_modules/react-router/es/withRouter.js": {
-      "id": 192,
+      "id": 225,
       "meta": {
         "harmonyModule": true
       },
@@ -914,63 +1215,106 @@
       ]
     },
     "./node_modules/react/lib/KeyEscapeUtils.js": {
-      "id": 193,
+      "id": 226,
       "meta": {}
     },
     "./node_modules/react/lib/PooledClass.js": {
-      "id": 194,
+      "id": 227,
       "meta": {}
     },
     "./node_modules/react/lib/ReactChildren.js": {
-      "id": 195,
+      "id": 228,
       "meta": {}
     },
     "./node_modules/react/lib/ReactClass.js": {
-      "id": 196,
+      "id": 229,
       "meta": {}
     },
     "./node_modules/react/lib/ReactDOMFactories.js": {
-      "id": 197,
+      "id": 230,
       "meta": {}
     },
     "./node_modules/react/lib/ReactPropTypeLocationNames.js": {
-      "id": 198,
+      "id": 231,
       "meta": {}
     },
     "./node_modules/react/lib/ReactPropTypes.js": {
-      "id": 199,
+      "id": 232,
       "meta": {}
     },
     "./node_modules/react/lib/ReactPureComponent.js": {
-      "id": 200,
+      "id": 233,
       "meta": {}
     },
     "./node_modules/react/lib/ReactVersion.js": {
-      "id": 201,
+      "id": 234,
       "meta": {}
     },
     "./node_modules/react/lib/getIteratorFn.js": {
-      "id": 202,
+      "id": 235,
       "meta": {}
     },
     "./node_modules/react/lib/getNextDebugID.js": {
-      "id": 203,
+      "id": 236,
       "meta": {}
     },
     "./node_modules/react/lib/onlyChild.js": {
-      "id": 204,
+      "id": 237,
       "meta": {}
     },
     "./node_modules/react/lib/traverseAllChildren.js": {
-      "id": 205,
+      "id": 238,
       "meta": {}
     },
+    "./node_modules/redux/es/applyMiddleware.js": {
+      "id": 239,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./node_modules/redux/es/bindActionCreators.js": {
+      "id": 240,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./node_modules/redux/es/combineReducers.js": {
+      "id": 241,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
     "./node_modules/resolve-pathname/index.js": {
-      "id": 206,
+      "id": 242,
+      "meta": {}
+    },
+    "./node_modules/symbol-observable/index.js": {
+      "id": 243,
+      "meta": {}
+    },
+    "./node_modules/symbol-observable/lib/index.js": {
+      "id": 244,
+      "meta": {}
+    },
+    "./node_modules/symbol-observable/lib/ponyfill.js": {
+      "id": 245,
       "meta": {}
     },
     "./node_modules/value-equal/index.js": {
-      "id": 207,
+      "id": 246,
+      "meta": {}
+    },
+    "./node_modules/webpack/buildin/module.js": {
+      "id": 247,
       "meta": {}
     }
   }

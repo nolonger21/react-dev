@@ -7,7 +7,7 @@ var path = require('path'),
 
 module.exports = {
     entry:  {
-        bundle:rootPath + appPath + 'main.js'
+        bundle:rootPath + appPath + 'index.js'
     },
     output: {
         path: rootPath + '/dist',
