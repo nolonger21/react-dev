@@ -3,7 +3,8 @@ import styles from '../css/main.styl';
 import {
   BrowserRouter as Router,
   Route,
-  NavLink
+  NavLink,
+  Redirect
 } from 'react-router-dom'
 
 
@@ -13,19 +14,18 @@ class Tab extends Component{
     this.state = {
       activeIndex : 0
     }
+    this.handleClick = this.handleClick.bind(this);
   }
-  handleClick0(){
-    this.setState({activeIndex:0})
-  }
-  handleClick1(){
-    this.setState({activeIndex:1})
+  handleClick(event){
+    let index = event.target.getAttribute("data-index");
+    this.setState({activeIndex:index})
   }
   render(){
     return (
     <div className={styles.tab}>
       <div className={styles.label} data-active-index={this.state.activeIndex}>
-        <NavLink to="/reg" activeClassName={styles.active}onClick={this.handleClick0.bind(this)}>注册</NavLink>
-        <NavLink to="/login" activeClassName={styles.active} onClick={this.handleClick1.bind(this)}>登录</NavLink>
+        <NavLink to="/reg" activeClassName={styles.active} data-index="0" onClick={this.handleClick}>注册</NavLink>
+        <NavLink to="/login" activeClassName={styles.active} data-index="1" onClick={this.handleClick}>登录</NavLink>
         <span></span>
       </div>
     </div>  
@@ -68,6 +68,7 @@ const User = () => (
     <Tab />
     <Reg />
     <Login />
+    <Redirect exact from='/' to="/reg"/>
   </div>
 </Router>
 )
