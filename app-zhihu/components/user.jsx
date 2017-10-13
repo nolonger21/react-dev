@@ -44,6 +44,10 @@ const Reg = () => (
       <div className={styles.btn}>
         <button type="submit">注册知乎</button>
       </div>
+      <div className={styles.remind}>  
+        <p>点击「注册」按钮，即代表你同意<a href="#">《知乎协议》</a></p>
+        <div className={styles.regorg}><a href="#">注册机构号</a></div>
+      </div>  
     </div>
   )}/>
 )

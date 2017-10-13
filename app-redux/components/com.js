@@ -3,10 +3,10 @@
     //定义组件  
     class Com extends Component{  
         render() {
-            const {onClick} = this.props;
+            const {onClick1,text1} = this.props;
             return (  
                 <div>  
-                    <button onClick={onClick}>click me</button>
+                    <button onClick={onClick1}>{text1}</button>
                 </div>  
             );  
         }  

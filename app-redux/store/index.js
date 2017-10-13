@@ -6,14 +6,17 @@
 
     //映射Redux state到组件的属性  
     function mapStateToProps(state) {  
-        return { text: state.text }  
+        return { 
+            text1: state.text1,
+            text2: state.text2
+        }
     }  
       
     //映射Redux actions到组件的属性  
     function mapDispatchToProps(dispatch){  
         return{  
-            onButtonClick:()=>dispatch(actions.buttonClickAction),  
-            onChangeText:()=>dispatch(actions.changeTextAction)  
+            onButtonClick1:()=>dispatch(actions.buttonClickAction1),
+            onButtonClick2:()=>dispatch(actions.buttonClickAction2)
         }  
     }  
  
