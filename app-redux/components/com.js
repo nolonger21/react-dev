@@ -6,7 +6,7 @@
             const {onClick} = this.props;
             return (  
                 <div>  
-                    <button onClick={onClick}>click me</button>
+                    <button onClick={onClick}>click me2</button>
                 </div>  
             );  
         }  
