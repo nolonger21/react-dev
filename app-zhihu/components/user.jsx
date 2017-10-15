@@ -36,14 +36,20 @@ class Tab extends Component{
 const Reg = () => (
   <Route path="/reg" render={()=>(
     <div className={styles.form}>
-      <div className={styles.reg}>
-        <input type="text" placeholder="姓名" />
-        <input type="text" placeholder="手机号 （仅支持中国大陆）" />
-        <input type="text" placeholder="密码（不少于6位）" />
-      </div>
-      <div className={styles.btn}>
-        <button type="submit">注册知乎</button>
-      </div>
+      <form method="post" action="/myWeb/react-dev/dist/server/register.php">
+        <div className={styles.reg}>
+          <input type="text"  name="name" placeholder="姓名" />
+          <input type="text"  name="pw" placeholder="手机号 （仅支持中国大陆）" />
+          <input type="password"  name="repw" placeholder="密码（不少于6位）" />
+        </div>
+        <div className={styles.btn}>
+          <button type="submit" name="submit" >注册知乎</button>
+        </div>
+      </form>
+      <div className={styles.remind}>  
+        <p>点击「注册」按钮，即代表你同意<a href="#">《知乎协议》</a></p>
+        <div className={styles.regorg}><a href="#">注册机构号</a></div>
+      </div>  
     </div>
   )}/>
 )
