@@ -36,11 +36,11 @@ class Tab extends Component{
 const Reg = () => (
   <Route path="/reg" render={()=>(
     <div className={styles.form}>
-      <form method="post" action="/myWeb/react-dev/dist/server/register.php">
+      <form method="post" action="server/register.php">
         <div className={styles.reg}>
           <input type="text"  name="name" placeholder="姓名" />
-          <input type="text"  name="pw" placeholder="手机号 （仅支持中国大陆）" />
-          <input type="password"  name="repw" placeholder="密码（不少于6位）" />
+          <input type="text"  name="tel" placeholder="手机号 （仅支持中国大陆）" />
+          <input type="password"  name="pw" placeholder="密码（不少于6位）" />
         </div>
         <div className={styles.btn}>
           <button type="submit" name="submit" >注册知乎</button>

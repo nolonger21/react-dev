@@ -1,16 +1,23 @@
-<?php 
-$link = mysqli_connect('localhost', 'root', '', 'root');
-if (!$link) {
-    die('Could not connect: ' . mysql_error());
-}else {
+<meta charset=utf-8>
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "test";
+
+
+
     if (isset($_POST['submit'])){
-        if ($_POST['pw'] == $_POST['repw']){
-    $query = "insert into user (name,pw) values('{$_POST['name']}','{$_POST['pw']}')";
-    $result=mysqli_query($link, $query);
-    header("Location:login.php");
-        }else {
-            echo "<script>alert('两次输入密码不一致！')</script>";
-        }
+        
+			$link = new PDO("mysql:host=$servername;dbname=test", $username, $password);
+
+			$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			$sql = "insert into user (name,pw) values('{$_POST['name']}','{$_POST['pw']}')";
+
+			$conn->exec($sql);
+            echo "注册成功";
+
     }
-}
-?>
+
+$conn = null;
+?> 
