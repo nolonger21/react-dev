@@ -57,13 +57,15 @@ const Reg = () => (
 const Login = () => (
   <Route path="/login" render={()=>(
     <div className={styles.form}>
-    <div className={styles.login}>
-        <input type="text" placeholder="手机号或邮箱" />
-        <input type="text" placeholder="密码" />
-    </div>
-    <div className={styles.btn}>
-      <button type="submit">登录</button>
-    </div>
+      <form method="post" action="server/login.php">
+        <div className={styles.login}>
+            <input type="text" name="tel" placeholder="手机号或邮箱" />
+            <input type="text" name="pw" placeholder="密码" />
+        </div>
+        <div className={styles.btn}>
+          <button type="submit" name="submit" >登录</button>
+        </div>
+      </form>
     </div>
   )}/>
 )
