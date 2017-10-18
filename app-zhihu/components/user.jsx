@@ -54,21 +54,30 @@ const Reg = () => (
   )}/>
 )
 
-const Login = () => (
-  <Route path="/login" render={()=>(
-    <div className={styles.form}>
-      <form method="post" action="server/login.php">
-        <div className={styles.login}>
-            <input type="text" name="tel" placeholder="手机号或邮箱" />
-            <input type="text" name="pw" placeholder="密码" />
+class Login extends Component {
+  constructor(props){
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick(){
+    console.log(this.refs);
+  }
+  render(){
+    return(
+      <Route path="/login" render={()=>(
+        <div className={styles.form}>
+            <div className={styles.login}>
+                <input type="text" name="tel" ref="tel" placeholder="手机号或邮箱" />
+                <input type="text" name="pw" ref="pw" placeholder="密码" />
+            </div>
+            <div className={styles.btn}>
+              <button type="submit" name="submit" ref="ee"  onClick={this.handleClick} >登录</button>
+            </div>
         </div>
-        <div className={styles.btn}>
-          <button type="submit" name="submit" >登录</button>
-        </div>
-      </form>
-    </div>
-  )}/>
-)
+      )}/>
+    )
+  }
+}
 
 const User = () => (
 <Router>
