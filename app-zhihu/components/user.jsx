@@ -60,24 +60,33 @@ class Login extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick(){
-    console.log(this.refs);
+    this.sub.onsubmit =  () => {
+      if(this.tel.value == "" || this.pw.value == ""){
+         alert("登录名和密码不能为空！");
+         return false;
+      }
+    }
   }
   render(){
     return(
       <Route path="/login" render={()=>(
         <div className={styles.form}>
+         <form method="post" action="server/login.php" ref={sub =>{this.sub = sub}}>
             <div className={styles.login}>
-                <input type="text" name="tel" ref="tel" placeholder="手机号或邮箱" />
-                <input type="text" name="pw" ref="pw" placeholder="密码" />
+                <input type="text" name="tel" ref={tel => {this.tel = tel}} placeholder="手机号或邮箱" />
+                <input type="text" name="pw" ref={pw => {this.pw = pw}} placeholder="密码" />
             </div>
             <div className={styles.btn}>
-              <button type="submit" name="submit" ref="ee"  onClick={this.handleClick} >登录</button>
+              <button type="submit" name="submit" onClick={this.handleClick}>登录</button>
             </div>
+         </form>
         </div>
       )}/>
     )
   }
 }
+
+
 
 const User = () => (
 <Router>
