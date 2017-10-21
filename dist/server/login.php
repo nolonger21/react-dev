@@ -10,7 +10,7 @@
         }
         $sql = "SELECT * FROM user WHERE tel = '$tel' AND pw='$pw'";
         $result = $conn->query($sql)->rowCount();
-            
+    
         if($result){
             echo '登录成功！';
         }else{
