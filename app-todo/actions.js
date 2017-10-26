@@ -28,6 +28,6 @@ export function completeTodo(index) {
   return { type: COMPLETE_TODO, index }
 }
 
-export function setVisibilityFilter(filter) {
-  return { type: SET_VISIBILITY_FILTER, filter }
+export function setVisibilityFilter(nextFilter) {
+  return { type: SET_VISIBILITY_FILTER, nextFilter }
 }

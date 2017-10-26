@@ -3,13 +3,16 @@
     //定义组件  
     class Com extends Component{  
         render() {
-            const {onClick1,text1} = this.props;
-            return (  
-                <div>  
-                    <button onClick={onClick1}>{text1}</button>
-                </div>  
-            );  
-        }  
+            return (
+            <ul>
+                {this.props.todos.map((todo) =>
+                    <li>
+                        {todo.text}
+                    </li>
+                )}
+            </ul>
+            )
+        }
     }  
       
 export default Com;
