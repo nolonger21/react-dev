@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import styles from '../css/main.styl';
-import logo from '../images/logo.png';
+import styles from './css/main.styl';
+import logo from './images/logo.png';
 
-class Header extends Component {
+class User_header extends Component {
   render() {
     return (
     <div className={styles.header}>
@@ -13,4 +13,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default User_header;

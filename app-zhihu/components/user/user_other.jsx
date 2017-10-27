@@ -1,8 +1,8 @@
     import React, { Component } from 'react';  
-    import styles from '../css/main.styl';
+    import styles from './css/main.styl';
       
     //定义组件  
-    class Other extends Component{
+    class User_other extends Component{
         constructor(props){
             super(props);
             this.state = {
@@ -21,7 +21,7 @@
         }
         render() {
             return (  
-                <div className={styles.app}>  
+                <div className={styles.other}>  
                     <button onClick={this.handleClick}>{this.state.text}</button>
                     <div className={styles.qrcode+' '+this.state.toggle}>
                         <div className={styles.qrcodeimage}></div>
@@ -32,4 +32,4 @@
         }  
     }  
       
-export default Other;
+export default User_other;

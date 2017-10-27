@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from '../css/main.styl';
+import styles from './css/main.styl';
 import {
   BrowserRouter as Router,
   Route,
@@ -24,8 +24,8 @@ class Tab extends Component{
     return (
     <div className={styles.tab}>
       <div className={styles.label} data-active-index={this.state.activeIndex}>
-        <NavLink to="/reg" activeClassName={styles.active} data-index="0" onClick={this.handleClick}>注册</NavLink>
-        <NavLink to="/login" activeClassName={styles.active} data-index="1" onClick={this.handleClick}>登录</NavLink>
+        <NavLink to="/user-reg" activeClassName={styles.active} data-index="0" onClick={this.handleClick}>注册</NavLink>
+        <NavLink to="/user-login" activeClassName={styles.active} data-index="1" onClick={this.handleClick}>登录</NavLink>
         <span></span>
       </div>
     </div>  
@@ -48,7 +48,7 @@ class Reg extends Component{
   }
   render (){
     return (
-      <Route path="/reg" render={()=>(
+      <Route path="/user-reg" render={()=>(
         <div className={styles.form}>
           <form method="post" action="server/register.php" ref={sub =>{this.sub = sub}}>
             <div className={styles.reg}>
@@ -85,7 +85,7 @@ class Login extends Component {
   }
   render(){
     return(
-      <Route path="/login" render={()=>(
+      <Route path="/user-login" render={()=>(
         <div className={styles.form}>
          <form method="post" action="server/login.php" ref={sub =>{this.sub = sub}}>
             <div className={styles.login}>
@@ -104,16 +104,15 @@ class Login extends Component {
 
 
 
-const User = () => (
+const User_main = () => (
 <Router>
-  <div className={styles.user}>
+  <div className={styles.main}>
     <Tab />
     <Reg />
     <Login />
-    <Redirect exact from='/' to="/reg"/>
   </div>
 </Router>
 )
 
 
-export default User;
+export default User_main;

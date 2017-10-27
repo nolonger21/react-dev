@@ -1,6 +1,6 @@
     import { createStore } from 'redux';  
-    import * as actions from '../action';
-    import reducer from '../reducer';
+    import * as actions from './action';
+    import reducer from './reducer';
 
     let store = createStore(reducer);  
 
